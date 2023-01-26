@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import Layout from './pages/Layout';
+import Kegiatan from './pages/Kegiatan';
+import Galeri from './pages/Galeri';
+import KKN from './pages/KKN';
+import Struktur from './pages/Struktur';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='kegiatan' element={<Kegiatan/>}/>
+          <Route path='struktur' element={<Struktur/>}/>
+          <Route path='galeri' element={<Galeri/>}/>
+          <Route path='kkn' element={<KKN/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </div>
   );
 }
