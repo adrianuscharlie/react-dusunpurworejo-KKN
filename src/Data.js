@@ -81,3 +81,15 @@ export const DusunCarousel=[
   require("./assets/carousel_dusun/12.jpg"),
   require("./assets/carousel_dusun/13.jpg"),
 ]
+
+
+export const KegiatanDusun=[
+  {nama:"Kerja Bakti",url:require("./assets/proker/kerjabakti.jpg")},
+  {nama:"Senam",url:require("./assets/proker/senam.jpg")},
+  {nama:"PKK",url:require("./assets/proker/pkk.jpg")},
+  {nama:"Posyandu Lansia",url:require("./assets/proker/pkk.jpg")},
+  {nama:"Posyandu Balita",url:require("./assets/carousel_kkn/8.JPG")},
+  {nama:"Kelompok Wanita Tani",url:require("./assets/carousel_kkn/13.JPG")},
+  {nama:"Karang Taruna",url:require("./assets/carousel_dusun/11.jpg")},
+  {nama:"Rapat RT",url:require("./assets/carousel_kkn/3.JPG")},
+]
